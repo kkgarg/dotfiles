@@ -34,12 +34,13 @@ Plugin 'tpope/vim-rhubarb'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/tComment'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tomtom/tlib_vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'garbas/vim-snipmate'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'mxw/vim-jsx'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'ervandew/supertab'
 
 
 " All of your Plugins must be added before the following line
@@ -66,7 +67,7 @@ let g:ctrlp_cmd = 'CtrlP'
 map <C-n> :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<cr>
 
-set number
+set relativenumber
 let g:html_indent_inctags = "html,body,head,tbody"
 
 
@@ -235,4 +236,6 @@ set paste
 " Allow JSX in normal JS files
 let g:jsx_ext_required = 0
 
+set ignorecase 
+set autoindent 
 
